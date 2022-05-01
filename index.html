@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Age Calculator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head-container">
+            <h1>Age Calculator</h1>
+          <p>Calcualte age from date of birth and current date</p>
+        </div>
+
+        <div class="input-container" id="res">
+
+            <label for="fname"><b>Date of Birth</b></label>
+            <input type="date" placeholder="Enter Your Date of Birth"
+                id="dob" name="dob" />
+
+            <br><br><br><br>
+
+            <label for="lname"><b>Select Current Date</b></label>
+            <input type="date" placeholder="Enter Last Name" id="cDate"
+                name="cDate" />
+            <input type="button" onclick="callDate2()" value="Today">
+            <br><br><br><br>
+
+            <button onclick="ageCalculator()">Calculate</button>
+
+            <p id="result">Age Results Here!</p>
+        </div>
+    </div>
+</body>
+
+</html>
